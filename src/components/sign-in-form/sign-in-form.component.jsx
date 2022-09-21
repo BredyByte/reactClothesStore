@@ -1,7 +1,7 @@
 import React,{ useState } from 'react';
 
 import FormInput from '../form-input/form-input.component';
-import CustomButton from '../customUI/custom-button/custom-button.component';
+import CustomButton, {BUTTON_TYPE_CLASSES} from '../customUI/custom-button/custom-button.component';
 
 import {
   signInWithGooglePopup,
@@ -82,7 +82,7 @@ const SignInForm = () => {
         />
         <div className="buttons-container">
           <CustomButton type="submit">Sign In</CustomButton>
-          <CustomButton type="button" buttonType="google" onClick={signInWithGoogle} >Google sign in</CustomButton>
+          <CustomButton type="button" buttonType={BUTTON_TYPE_CLASSES.google} onClick={signInWithGoogle} >Google sign in</CustomButton>
         </div>
       </form>
     </div>
