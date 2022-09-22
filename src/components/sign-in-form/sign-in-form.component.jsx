@@ -5,7 +5,6 @@ import CustomButton, {BUTTON_TYPE_CLASSES} from '../customUI/custom-button/custo
 
 import {
   signInWithGooglePopup,
-  createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword
 } from '../../utils/firebase/firebase.utils';
 
@@ -19,7 +18,7 @@ const defaultFormFields = {
 
 const SignInForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
-  const { email, password } = formFields;
+  const {email, password} = formFields;
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
@@ -33,7 +32,7 @@ const SignInForm = () => {
     event.preventDefault();
 
     try {
-      const {user} = await signInAuthUserWithEmailAndPassword(
+      await signInAuthUserWithEmailAndPassword(
         email,
         password
       );
