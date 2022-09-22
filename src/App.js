@@ -6,12 +6,15 @@ import Authentication from './routes/authentication/authentication.component';
 import Shop from './routes/shop/shop.component';
 import Checkout from './routes/checkout/checkout.component';
 
+const Test = () => <h1>I'm test file!</h1>
+
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Navigation/>}>
         <Route index element={<Home/>}/>
         <Route path="shop/*" element={<Shop/>}/>
+        <Route path="/test" element={<Test/>} />
         <Route path="auth" element={<Authentication/>}/>
         <Route path="checkout" element={<Checkout/>} />
       </Route>
