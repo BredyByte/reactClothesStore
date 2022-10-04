@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 
 import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from '../../utils/firebase/firebase.utils';
 import FormInput from '../form-input/form-input.component';
+import { ToastContainer, toast } from "react-toastify";
 import CustomButton from '../customUI/custom-button/custom-button.component';
 
 import {SignUpContainer} from './sign-up-form.styles';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const defaultFormFields = {
@@ -37,11 +39,13 @@ const SignUpForm = () => {
 
       await createUserDocumentFromAuth(user, { displayName });
       resetFormFields();
+      toast.success("Account successfully created");
 
     } catch(error) {
       if(error.code === "auth/email-already-in-use" ) {
-        alert("Cannot create user, email already in use");
+        toast.error("Cannot create user, email already in use");
       } else {
+        toast.error("Something went wrong...", error);
         console.log("user creation encountered an error", error);
       }
     }
@@ -54,6 +58,7 @@ const SignUpForm = () => {
 
   return (
     <SignUpContainer>
+      <ToastContainer position="top-center" />
       <h2>Don't have an account?</h2>
       <span>
         Sign up with your email and password
