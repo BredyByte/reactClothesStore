@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# React Clothes Store
+### [Is hosted here](https://golden-kashata-473707.netlify.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technology Stack.
+1)React.
+2)[Google Firebase](https://firebase.google.com/) For keeping there shop data and implement the system of sign in and sign out.
+3)[Netlify](https://app.netlify.com/) Is a web hosting and automation platform.
+4)[Styled components](https://styled-components.com/) Module that allows you to write styles inside independent components.
+5)[Emailjs](https://www.emailjs.com/) Is a js library that will guide you through building a contact form that sends the content of the form to your email.
+6)[React Router](https://reactrouter.com/en/main) React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application.
+7)[Redux](https://es.redux.js.org/) Js library, that allows you to manage the state of the application.
+ETC...
 
-## Available Scripts
+## Application Functionality
+1) Дизайн у приложения скромный, я все еще не сделал мобильную версию, но это изначально задумывалось как обучение, и пошаговое изучения оприделенных вещей на живом пректе. Со стилями еще придется поработать. Для стилей использовался модуль styled-components
+2) Это магазин в котором любой желающий может купить одежду. Здесь все еще нет системы оплаты, но в будущем я ее добавю.
+3) Используется система реакт роутер дома для передвижения по страницам при этом навигационная панель всегда статична.
+4) Для авторизации и создания аккаунта используется библиотека 'firebase', с помошью нее пользователь может подключаться с помощью уже созданных ранее аккаунтов гугл, фейсбук и так далее, либо создать свой аккаунт с нуля, данные которого будут храниться на серверах firebase.
+5) При заполнении формы во вкладке contact us, сообщение приходит на ранее созданную почту, так же можно настроить систему авто ответов пользователям. Для этого использовалась библиотека Emailjs.
+6) В ветке redux-version есть версия этого проекта переписанная с использованием redux вместо useState, useEffect и context.
+7) единственное отличие этих версий что в redux-version тавары в корзине сохраняются, и после повторного входа, они не пропадут это сделано с помощью redux-persist
 
-In the project directory, you can run:
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
