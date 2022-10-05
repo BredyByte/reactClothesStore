@@ -2,7 +2,7 @@
 ### [Is hosted here](https://golden-kashata-473707.netlify.app/)
 
 ## Technology Stack.
-1)React.
+1)React./
 2)[Google Firebase](https://firebase.google.com/) For keeping there shop data and implement the system of sign in and sign out.
 3)[Netlify](https://app.netlify.com/) Is a web hosting and automation platform.
 4)[Styled components](https://styled-components.com/) Module that allows you to write styles inside independent components.
