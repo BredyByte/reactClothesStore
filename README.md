@@ -12,12 +12,12 @@
 ETC...
 
 ## Application Functionality
-1) Дизайн у приложения скромный, я все еще не сделал мобильную версию, но это изначально задумывалось как обучение, и пошаговое изучения оприделенных вещей на живом пректе. Со стилями еще придется поработать. Для стилей использовался модуль styled-components.
-2) Это магазин в котором любой желающий может купить одежду. Здесь все еще нет системы оплаты, но в будущем я ее добавю.
-3) Используется система реакт роутер дома для передвижения по страницам при этом навигационная панель всегда статична. 
-4) Для авторизации и создания аккаунта используется библиотека 'firebase', с помошью нее пользователь может подключаться с помощью уже созданных ранее аккаунтов гугл, фейсбук и так далее, либо создать свой аккаунт с нуля, данные которого будут храниться на серверах firebase. 
-5) При заполнении формы во вкладке contact us, сообщение приходит на ранее созданную почту, так же можно настроить систему авто ответов пользователям. Для этого использовалась библиотека Emailjs. 
-6) В ветке redux-version есть версия этого проекта переписанная с использованием redux вместо useState, useEffect и context. 
-7) единственное отличие этих версий что в redux-version тавары в корзине сохраняются, и после повторного входа, они не пропадут это сделано с помощью redux-persist. 
+1) The design of the application is modest and i also haven't made a mobile version, but it was originally conceived as a training, and a step-by-step study of certain things building live project. Styles still have to be worked on. I used styled components module.
+2) This is a store where anyone can add favorite thing to the cart and buy them. There is still no payment system here, I want to add it in the near future.
+3) The react router dome system is used to navigate through the pages, while the navigation panel is always static.
+4) The firebase library is used for authorization and creation an account, also with it's help , user can connect using previously created accounts of Google, Facebook etc. or create it from scratch, whose data will be stored on firebase servers.
+5)Contact us tab. When form is completed and submitted, the message comes to my mail. Also this library allows to configure out  the system of auto responses. The Library is Emails 
+6) The "redux-version" branch has a version of this project rewritten using redux instead of useState, useEffect and context.
+7) The only one difference between them is, in redux-version, the products in the basket are saved and after reloading the page, they won't disappear. This is done using redux-persist.
 
 
