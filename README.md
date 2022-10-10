@@ -16,7 +16,7 @@ ETC...
 2) This is a store where anyone can add favorite thing to the cart and buy them. There is still no payment system here, I want to add it in the near future.
 3) The react router dome system is used to navigate through the pages, while the navigation panel is always static.
 4) The firebase library is used for authorization and creation an account, also with it's help , user can connect using previously created accounts of Google, Facebook etc. or create it from scratch, whose data will be stored on firebase servers.
-5)Contact us tab. When form is completed and submitted, the message comes to my mail. Also this library allows to configure out  the system of auto responses. The Library is Emails 
+5)Contact us tab. When form is completed and submitted, the message comes to my mail. Also this library allows to configure out  the system of auto responses. The Library is EmailJs 
 6) The "redux-version" branch has a version of this project rewritten using redux instead of useState, useEffect and context.
 7) The only one difference between them is, in redux-version, the products in the basket are saved and after reloading the page, they won't disappear. This is done using redux-persist.
 
