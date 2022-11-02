@@ -2,14 +2,14 @@
 ### [Is hosted here](https://golden-kashata-473707.netlify.app/)
 
 ## Technology Stack.
-1)React. \
+1)React - UI. \
 2)[Google Firebase](https://firebase.google.com/) For keeping there shop data and implement the system of sign in and sign out. \
 3)[Netlify](https://app.netlify.com/) Is a web hosting and automation platform. \
 4)[Styled components](https://styled-components.com/) Module that allows you to write styles inside independent components. \
 5)[Emailjs](https://www.emailjs.com/) Is a js library that will guide you through building a contact form that sends the content of the form to your email. \
 6)[React Router](https://reactrouter.com/en/main) To navigate through the app.\
-7)[Redux](https://es.redux.js.org/) state manager \
-8) redux thunk - middleware
+7)[Redux](https://es.redux.js.org/) State Manager \
+8) redux thunk - Middleware
 ETC...
 
 ## Application Functionality
