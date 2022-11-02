@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# React Clothes Store
+### [Is hosted here](https://golden-kashata-473707.netlify.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technology Stack.
+1)React - UI. \
+2)[Google Firebase](https://firebase.google.com/) For keeping there shop data and implement the system of sign in and sign out. \
+3)[Netlify](https://app.netlify.com/) Is a web hosting and automation platform. \
+4)[Styled components](https://styled-components.com/) Module that allows you to write styles inside independent components. \
+5)[Emailjs](https://www.emailjs.com/) Is a js library that will guide you through building a contact form that sends the content of the form to your email. \
+6)[React Router](https://reactrouter.com/en/main) To navigate through the app.\
+7)[Redux](https://es.redux.js.org/) State Manager \
+8) redux thunk - Middleware
+ETC...
 
-## Available Scripts
+## Application Functionality
+1) The design of the application is modest and i also haven't made a mobile version, but it was originally conceived as a training, and a step-by-step study of certain things building live project. Styles still have to be worked on. I used styled components module.
+2) This is a store where anyone can add favorite thing to the cart and buy them. There is still no payment system here, I want to add it in the near future.
+3) The react router dome system is used to navigate through the pages, while the navigation panel is always static.
+4) The firebase library is used for authorization and creation an account, also with it's help , user can connect using previously created accounts of Google, Facebook etc. or create it from scratch, whose data will be stored on firebase servers.
+5)Contact us tab. When form is completed and submitted, the message comes to my mail. Also this library allows to configure out  the system of auto responses. The Library is EmailJs 
+6) The "redux-version" branch has a version of this project rewritten using redux instead of context or long props way through all components.
+7) Redux-persist is used to keep data in cart after reloading the page.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

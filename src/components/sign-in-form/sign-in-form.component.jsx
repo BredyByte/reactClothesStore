@@ -2,6 +2,7 @@ import React,{ useState } from 'react';
 
 import FormInput from '../form-input/form-input.component';
 import CustomButton, {BUTTON_TYPE_CLASSES} from '../customUI/custom-button/custom-button.component';
+import { useNavigate } from 'react-router-dom';
 
 import {
   signInWithGooglePopup,
@@ -19,6 +20,7 @@ const defaultFormFields = {
 const SignInForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { email, password } = formFields;
+  const navigate = useNavigate();
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
@@ -26,14 +28,16 @@ const SignInForm = () => {
 
   const signInWithGoogle = async () => {
     await signInWithGooglePopup();
+    navigate('/');
   }
 
   const handleSubmit =  async (event) => {
     event.preventDefault();
 
     try {
-       await signInAuthUserWithEmailAndPassword(email, password);
+      await signInAuthUserWithEmailAndPassword(email, password);
       resetFormFields();
+      navigate('/');
 
     } catch(error) {
       switch(error.code) {

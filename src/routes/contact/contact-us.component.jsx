@@ -100,7 +100,7 @@ const ContactUs = () => {
             <span className="fa fa-globe" ></span>
             <p>
               <span>Website:</span>
-              <a href="#">yoursite.com</a>
+              <a href="/" >yoursite.com</a>
             </p>
           </InfoItem>
         </InfoInner>

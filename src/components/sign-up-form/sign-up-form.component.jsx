@@ -9,7 +9,6 @@ import {SignUpContainer} from './sign-up-form.styles';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-
 const defaultFormFields = {
   displayName: '',
   email: '',
@@ -41,6 +40,7 @@ const SignUpForm = () => {
       await createUserDocumentFromAuth(user, { displayName });
       toast.success("You have successfully registered");
       resetFormFields();
+      toast.success("Account successfully created");
 
     } catch(error) {
       if(error.code === "auth/email-already-in-use" ) {
