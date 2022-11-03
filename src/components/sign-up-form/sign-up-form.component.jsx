@@ -4,6 +4,9 @@ import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from '
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../customUI/custom-button/custom-button.component';
 
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 import {SignUpContainer} from './sign-up-form.styles';
 
 
@@ -36,12 +39,20 @@ const SignUpForm = () => {
       );
 
       await createUserDocumentFromAuth(user, { displayName });
+      toast.success("You have successfully registered", {
+        autoClose: 1000
+      });
       resetFormFields();
 
     } catch(error) {
       if(error.code === "auth/email-already-in-use" ) {
-        alert("Cannot create user, email already in use");
+        toast.error( "Cannot create user, email already in use", {
+          autoClose: 1000
+        });
       } else {
+        toast.error( "Something went wrong...", error, {
+          autoClose: 1000
+        });
         console.log("user creation encountered an error", error);
       }
     }
@@ -54,6 +65,7 @@ const SignUpForm = () => {
 
   return (
     <SignUpContainer>
+      <ToastContainer position="top-center" />
       <h2>Don't have an account?</h2>
       <span>
         Sign up with your email and password

@@ -31,6 +31,7 @@ const Navigation = () => {
               ? (<NavLink as="span" onClick={signOutUser}>SIGN OUT</NavLink>)
               : (<NavLink to="/auth">SIGN IN</NavLink>)
           }
+          <NavLink to='contact-us'>CONTACT US</NavLink>
           <CartIcon addClass="nav-link" />
         </NavLinks>
         {isCartOpen && <CartDropdown/>}
